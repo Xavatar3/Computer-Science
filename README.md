@@ -9,11 +9,11 @@ Each topic contains essential theory, worked examples, practice questions, and s
 
 ### Digital Logic
 - [Essentials](Digital-Logic/Essentials/)
+
 <!--
 - [Calculations](Digital-Logic/Calculations/)
 - [Questions](Digital-Logic/Questions/)
 - [Extras](Digital-Logic/Extras/)
-
 (Additional subjects will appear here as they are added.)
 -->
 
