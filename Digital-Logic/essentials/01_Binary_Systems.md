@@ -1,7 +1,5 @@
 # Binary Systems
-
 ---
-
 ## Definition
 
 Binary systems are a way of representing numbers using only two symbols: **0** and **1**.
