@@ -4,109 +4,94 @@
 
 ## Definition
 
-Binary systems are a way of representing numbers using only two symbols: **0** and **1**.
+Binary systems represent information using only two symbols: **0** and **1**, forming the foundation of all digital systems.
 
 ---
 
 ## Advantages of Binary Systems
 
-### 1. Simplicity in Hardware
-
-Only two states (0 and 1) are needed, which match OFF and ON electrical signals.
-
-**Example:**  
-A switch in a circuit can easily represent 0 (OFF) and 1 (ON).
+**Simplicity in Hardware:** Uses only two states that directly map to OFF and ON electrical signals.  
+**e.g.** A switch represents 0 (OFF) and 1 (ON).
 
 ---
 
-### 2. Reliability / Noise Immunity
-
-With only two states, circuits are less sensitive to small voltage fluctuations.
-
-**Example:**  
-A signal of 4.9V is clearly interpreted as 1, while 0.1V is 0, reducing errors.
+**Reliability / Noise Immunity:** Clear separation between two states makes systems resistant to voltage noise.  
+**e.g.** 4.9V is reliably interpreted as 1, while 0.1V is interpreted as 0.
 
 ---
 
-### 3. Ease of Logical Operations
-
-Boolean logic maps naturally to binary numbers.
-
-**Example:**  
-AND, OR, NOT operations can be implemented directly in hardware.
+**Ease of Logical Operations:** Binary aligns naturally with Boolean logic used in digital circuits.  
+**e.g.** AND, OR, and NOT gates operate directly on binary values.
 
 ---
 
-### 4. Compact Representation in Digital Electronics
-
-Large amounts of data can be stored using only bits.
-
-**Example:**  
-An 8-bit byte can store 256 different values (0–255).
+**Compact Data Representation:** Large amounts of information can be stored efficiently using bits.  
+**e.g.** An 8-bit byte represents 256 values (0–255).
 
 ---
 
-### 5. Universality in Computing
-
-Binary can represent any number, character, or instruction.
-
-**Example:**  
-ASCII codes for letters use 7 or 8 bits per character.
+**Universality in Computing:** Binary can encode numbers, text, and instructions.  
+**e.g.** ASCII uses binary patterns to represent characters.
 
 ---
 
 ## Disadvantages of Binary Systems
 
-### 1. Inefficient for Human Reading
+Binary systems are ideal for machines but introduce limitations when used by humans.
 
-Binary numbers are long and hard to interpret compared to decimal.
+---
+## Disadvantages of Binary Systems
 
-**Example:**  
-Decimal 255 → Binary 11111111 (harder for humans to read).
+**Hard for Humans:** Binary numbers are long and difficult to read.  
+**e.g.** 255₁₀ → 11111111₂
 
 ---
 
-### 2. More Bits Needed for Large Numbers
-
-Representing large numbers requires many bits.
-
-**Example:**  
-Decimal 1023 → Binary 1111111111 (10 bits).
+**High Bit Count:** Large numbers require many bits for representation.  
+**e.g.** 1023₁₀ → 1111111111₂
 
 ---
 
-### 3. Memory and Bandwidth Overhead
-
-Sometimes storing in binary may take more memory than using other numeral systems like decimal-coded formats.
+**Resource Overhead:** Binary may consume more memory or bandwidth than decimal-based formats.
 
 ---
 
-### 4. Complex Arithmetic for Humans
+**Manual Arithmetic:** Calculations are harder to perform accurately.  
+**e.g.** 101101 + 11011 requires careful bit-by-bit addition.
 
-Performing calculations in binary is harder manually.
+## Binary Number Code Categories
 
-**Example:**  
-Adding 101101 + 11011 requires careful column-wise addition, unlike simple decimal addition.
+Binary representation extends beyond pure numbers into structured codes used for storage, communication, and control.
 
----
-
-## Binary Number Code Categories — Summary Table
-
-| Category | Codes Included | Purpose / Notes |
-|--------|----------------|-----------------|
-| **Pure Binary Codes** | Natural Binary, Straight Binary | Standard base-2 representation without weighting tricks. |
-| **Weighted Codes** | BCD (8421), Excess-3, 5211, 2421 | Each digit has fixed positional weights; used for decimal digit encoding. |
-| **Non-Weighted Codes** | Gray Code, Johnson Code, Fibonacci Code | Codes without fixed positional weights; used in counters and error reduction. |
-| **Alphanumeric Codes** | ASCII, Extended ASCII, Unicode | Encodes letters, digits, punctuation, and control characters. |
-| **Error-Detecting Codes** | Parity (even/odd), VRC, LRC | Detect transmission/storage errors. |
-| **Error-Detecting & Correcting Codes** | Hamming Code, CRC, Reed–Solomon | Detect and correct errors; used in memory, storage, networking. |
-| **Signed Number Representations** | Sign-Magnitude, 1’s Complement, 2’s Complement, Excess-128 | Binary formats for positive/negative numbers. |
-| **Special Digital Logic Codes** | Gray, Biquinary, Ring Counter Codes | Used in counters, rotary encoders, and state machine design. |
-
----
+| Category | Examples | Purpose |
+|--------|----------|---------|
+| **Pure Binary Codes** | Natural Binary | Standard base-2 representation |
+| **Weighted Codes** | BCD (8421), Excess-3 | Decimal digit encoding |
+| **Non-Weighted Codes** | Gray, Johnson | Error reduction, counters |
+| **Alphanumeric Codes** | ASCII, Unicode | Text and symbols |
+| **Error-Detecting Codes** | Parity, VRC | Error detection |
+| **Error-Correcting Codes** | Hamming, CRC | Error detection and correction |
+| **Signed Representations** | 2’s Complement | Positive and negative numbers |
+| **Special Logic Codes** | Gray, Biquinary | Counters and encoders |
 
 <p align="center">
   <img src="../media/flow.jpg" style="width: 100%; max-width: 800px; height: auto;">
   <br>
   <em>Figure 1: Classification of Binary Number Codes</em>
 </p>
+
+---
+## Binary Codes by Function
+
+| **Function** | **Examples** | **Use** |
+|--------------|-------------|---------|
+| **Numeric** | Natural Binary, BCD, 2’s Complement | Arithmetic & storage |
+| **Error Control** | Parity, Hamming, CRC | Detect & correct errors |
+| **Text / Data** | ASCII, Unicode | Letters & symbols |
+| **Logic / Counters** | Gray, Johnson, Ring Counter | Digital circuits & counters |
+
+---
+
+<!--
+← [Previous: Number Systems Overview](00-Number-Systems.md) | [Next: Binary Number Codes](02-Binary-Codes.md) →
+-->
