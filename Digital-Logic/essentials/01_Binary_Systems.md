@@ -81,6 +81,40 @@ Binary representation extends beyond pure numbers into structured codes used for
 </p>
 
 ---
+
+flowchart TB
+    A[Binary Codes]:::main
+
+    %% Level 1 Categories
+    PB[**Pure Binary Codes**\n(e.g., 1010, 1101)]
+    WC[**Weighted Codes**\n(e.g., BCD 8421, 5211, Excess-3)]
+    NWC[**Non-Weighted Codes**\n(e.g., Gray Code, Johnson Code)]
+
+    %% Level 2 Categories
+    ALPHA[**Alphanumeric Codes**\n(e.g., ASCII 'A'=01000001, Unicode '世'=4E16)]
+    EDC[**Error-Detecting Codes**\n(e.g., Parity Bits, 1010 → 10101)]
+    ECC[**Error-Correcting Codes**\n(e.g., Hamming 7,4, 1011 → 0110011)]
+
+    %% Level 3 Categories
+    SNR[**Signed Number Representations**\n(e.g., 2's complement 8-bit: -22 → 11101010)]
+    SDC[**Special Digital Logic Codes**\n(e.g., Gray, Biquinary, Ring Counter)]
+
+    %% Connections
+    A --> PB
+    A --> WC
+    A --> NWC
+
+    PB --> ALPHA
+    WC --> EDC
+    NWC --> ECC
+
+    A --> SNR
+    SNR --> SDC
+
+    %% Styling
+    classDef main fill:#f2f2f2,stroke:#333,stroke-width:2px;
+
+---
 ## Binary Codes by Function
 
 | **Function** | **Examples** | **Use** |
