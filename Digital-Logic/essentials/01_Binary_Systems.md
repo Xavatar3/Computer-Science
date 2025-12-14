@@ -55,7 +55,7 @@ Binary representation extends beyond pure numbers into structured codes used for
 | **Error-Detecting Codes** | Parity, VRC | Error detection |
 | **Error-Correcting Codes** | Hamming, CRC | Error detection and correction |
 | **Signed Representations** | 2’s Complement | Positive and negative numbers |
-| **Special Logic Codes** | Gray, Biquinary | Counters and encoders |
+| **Special Logic Codes** | Gray, Biquinary | Counters and encoders |..
 
 <p align="center">
   <img src="../media/flow.jpg" style="width: 100%; max-width: 800px; height: auto;">
