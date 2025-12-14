@@ -1,12 +1,5 @@
 ## Binary Systems
-
----
-
-### Definition
-
 Binary systems represent information using only two symbols: **0** and **1**, forming the foundation of all digital systems.
-
----
 
 ### Advantages of Binary Systems
 
@@ -25,8 +18,6 @@ Binary systems represent information using only two symbols: **0** and **1**, fo
 **Universality in Computing:** Binary can encode numbers, text, and instructions.  
 **e.g.** ASCII uses binary patterns to represent characters.
 
----
-
 ### Disadvantages of Binary Systems
 
 Binary systems are ideal for machines but introduce limitations when used by humans.  
@@ -41,6 +32,8 @@ Binary systems are ideal for machines but introduce limitations when used by hum
 
 **Manual Arithmetic:** Calculations are harder to perform accurately.  
 **e.g.** 101101 + 11011 requires careful bit-by-bit addition.
+
+---
 
 ### Binary Number Code Categories
 
@@ -63,7 +56,6 @@ Binary representation extends beyond pure numbers into structured codes used for
   <em>Figure 1: Classification of Binary Number Codes</em>
 </p>
 
----
 ### Binary Codes by Function
 
 | **Function** | **Examples** | **Use** |
@@ -86,21 +78,13 @@ A self-complementing code is a code in which the 9’s complement (or n’s comp
 
 ---
 
-
-
 ### One’s Complement
-
-#### Definition  
 One’s complement is a *signed binary number representation* where negative numbers are represented by *inverting all bits* of the corresponding positive number.  
-
----
 
 #### Uses
 - Representing signed integers in digital systems.
 - Performing subtraction using addition (via complement addition).
 - Simplifying hardware design for arithmetic units in older computers.
-
----
 
 #### Characteristics
 - Uses most significant bit (MSB) as the sign bit (0 for positive, 1 for negative).
@@ -110,13 +94,9 @@ One’s complement is a *signed binary number representation* where negative num
   - Negative: - (2ⁿ⁻¹ - 1) to -0
 - There are two representations for zero: +0 and -0.
 
----
-
 #### Advantages
 - Simple to generate negative numbers by bit inversion.
 - Easy subtraction via addition using complements.
-
----
 
 #### Disadvantages
 - Two zeros (+0 and -0) complicate comparisons.
@@ -126,21 +106,13 @@ One’s complement is a *signed binary number representation* where negative num
 ---
 
 ### Two’s Complement
-
----
-
-#### Definition
 Two’s complement is a *signed binary number representation* where negative numbers are represented by *inverting all bits* of the corresponding positive number and adding 1.  
-
----
 
 #### Uses
 Two’s complement is the most widely used signed binary representation in modern computers.  
 - Representing signed integers in virtually all digital computers.
 - Simplifying addition and subtraction circuits.
 - Enabling efficient hardware design for arithmetic operations.
-
----
 
 #### Characteristics  
 - MSB acts as the sign bit (0 = positive, 1 = negative).
@@ -150,14 +122,10 @@ Two’s complement is the most widely used signed binary representation in moder
   - Negative: -2ⁿ⁻¹ to -1
 - Only one zero representation (0).
 
----
-
 #### Advantages
 - Single zero simplifies comparisons.
 - Addition and subtraction are uniform; no special end-around carry needed.
 - Hardware implementation is simpler and faster than One’s Complement.
-
----
 
 #### Disadvantages
 - Slightly more complex to manually calculate negative numbers.
@@ -166,10 +134,6 @@ Two’s complement is the most widely used signed binary representation in moder
 ---
 
 ## Binary-Coded Decimal (BCD) Codes
-
----
-
-### Definition
 Binary-Coded Decimal (BCD) is a code that represents decimal digits (0–9) using 4-bit binary codes. Each decimal digit is encoded separately.  
 
 | Variant | Mapping(0–9) | Notes |
@@ -183,29 +147,21 @@ Binary-Coded Decimal (BCD) is a code that represents decimal digits (0–9) usin
 
 **Note:** Since a 4-bit code can represent up to 1111 (15 in decimal), each BCD variant uses only 10 of the 16 possible combinations (for digits 0–9). This leaves six unused or illegal codes in each BCD system.
 
----
-
 ### Uses
 BCD is widely used in digital clocks, calculators, and display systems.  
 - Representing decimal numbers in digital circuits.  
 - Displaying numbers on seven-segment displays.  
 - Performing decimal arithmetic in computers and calculators.
 
----
-
 ### Characteristics  
 - 4 bits per decimal digit.  
 - Multiple variants exist based on positional weighting  
 - Arithmetic requires adjustment logic after binary addition for digits >9.
 
----
-
 ### Advantages
 - Easy to display decimal numbers directly.  
 - Certain variants are self-complementing, simplifying subtraction.  
 - Well-suited for decimal-centric applications.
-
----
 
 ### Disadvantages
 - Requires more bits than pure binary for the same number.  
@@ -215,19 +171,13 @@ BCD is widely used in digital clocks, calculators, and display systems.
 ---
 
 ### Excess-3 (XS-3) Code
-
-#### Definition
 Excess-3, also called XS-3, is a self-complementing binary-coded decimal (BCD) code where each decimal digit is represented by its 4-bit binary equivalent plus 3.  
-
----
 
 #### Uses
 It is commonly used in digital systems and calculators.
 - Representing decimal digits in digital circuits.
 - Simplifying subtraction using complements (self-complementing property).
 - Employed in digital clocks, calculators, and early computers.
-
----
 
 #### Characteristics  
 - 4-bit code for each decimal digit (0–9).  
@@ -245,19 +195,97 @@ It is commonly used in digital systems and calculators.
 
 **Note:** For multi-digit numbers, encode each decimal digit separately in 4-bit Excess-3, forexample, 14 is represented as two 4-bit groups: 0100 (1) and 0111 (4).
 
----
-
 #### Advantages
 - Self-complementing, making subtraction simpler.  
 - Avoids negative zero problem found in One’s Complement.  
 - Easy to implement in decimal arithmetic circuits.
 
----
-
 #### Disadvantages
 - Not a natural binary; requires conversion from decimal to XS-3.  
 - Slightly more complex hardware than pure BCD or straight binary.  
 - Only practical for decimal digit representation, not general binary arithmetic.
+
+---
+
+## Gray Code
+Gray Code, also known as Reflected Binary Code, is a binary numbering system in which two successive numbers differ by only one bit.  
+
+| Decimal | Binary | Gray Code |
+|:------------:|--------------------|-----------------------|
+| 1 | 0001 | 0001 |
+| 2 | 0010 | 0011 |
+| 3 | 0011 | 0010 |
+| 14 | 1110 | 1001 |
+
+  _Table 3: Gray Code Table(selected values, 4 bit)_
+
+
+### Uses
+- Rotary and linear encoders for position sensing.  
+- Error reduction in digital communications and counters.  
+- Minimizing glitches in digital circuits during transitions.
+
+### Characteristics
+- Only one bit changes between consecutive numbers (single-bit transition).  
+- Can be converted to and from binary easily.  
+- Often called a unit distance code.  
+
+### Advantages
+- Minimizes errors during transitions (only one bit changes).  
+- Ideal for mechanical or optical position sensors.  
+- Simplifies hardware implementation in certain counters.
+
+### Disadvantages
+- Not suitable for general-purpose arithmetic.  
+- Requires conversion to binary for calculations.  
+- Slightly more complex to generate compared to straight binary sequences.
+
+---
+
+## Error-Control Codes
+Error-control codes are used in digital systems to detect and/or correct errors that occur during data transmission or storage. Errors may arise from noise, interference, or hardware faults. These codes improve reliability and data integrity.
+
+### Error-Detecting Codes
+
+#### Parity Code
+Adds one extra bit to indicate whether the number of 1s is even or odd.
+
+##### Types
+- Even parity: Total number of 1s is even  
+- Odd parity: Total number of 1s is odd  
+
+##### Advantages
+- Very simple and low-cost.  
+- Detects single-bit errors.
+
+##### Disadvantages
+- Cannot detect even-numbered bit errors.  
+- No error correction.
+
+#### Cyclic Redundancy Check (CRC)
+- Uses polynomial division to generate a checksum.  
+- Common in networks and storage devices.
+
+##### Characteristics
+- Strong error detection capability.  
+- Detects burst errors efficiently.
+
+##### Advantages
+- Highly reliable for error detection.  
+- Widely standardized (Ethernet, USB, disk drives).
+
+##### Disadvantages
+- No error correction.  
+- Requires more computation than parity.
+
+### Error-Correcting Codes
+
+#### Hamming Code
+- Can detect and correct single-bit errors.  
+- Uses strategically placed parity bits.
+
+##### Structure
+Parity bits are placed at positions that are powers of 2:
 
 ---
 
