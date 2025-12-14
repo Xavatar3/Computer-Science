@@ -59,7 +59,6 @@ Binary representation extends beyond pure numbers into structured codes used for
 
 <p align="center">
   <img src="../media/flow.jpg" style="width: 100%; max-width: 800px; height: auto;">
-  <br>
   <em>Figure 1: Classification of Binary Number Codes</em>
 </p>
 
