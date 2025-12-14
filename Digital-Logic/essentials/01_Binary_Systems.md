@@ -44,7 +44,7 @@ Binary systems are ideal for machines but introduce limitations when used by hum
 
 ### Binary Number Code Categories
 
-Binary representation extends beyond pure numbers into structured codes used for storage, communication, and control.
+Binary representation extends beyond pure numbers into structured codes used for storage, communication, and control.  
 
 | Category | Examples | Purpose |
 |:--------|:----------|:---------|
