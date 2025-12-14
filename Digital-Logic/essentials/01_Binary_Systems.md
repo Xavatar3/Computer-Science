@@ -57,10 +57,14 @@ Binary representation extends beyond pure numbers into structured codes used for
 | **Signed Representations** | 2’s Complement | Positive and negative numbers |
 | **Special Logic Codes** | Gray, Biquinary | Counters and encoders |..
 
+
+<br>
 <p align="center">
   <img src="../media/flow.jpg" style="width: 100%; max-width: 800px; height: auto;">
   <em>Figure 1: Classification of Binary Number Codes</em>
 </p>
+<br>
+
 
 ---
 ### Binary Codes by Function
