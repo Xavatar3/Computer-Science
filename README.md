@@ -8,7 +8,7 @@ Each topic contains essential theory, worked examples, practice questions, and s
 ## Table of Contents
 
 ### Digital Logic
-- [Essentials](Digital-Logic/Essentials/)
+- [Essentials](Digital-Logic/essentials/01_Binary_Systems.md)
 
 <!--
 - [Calculations](Digital-Logic/Calculations/)
